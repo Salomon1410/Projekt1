@@ -1,0 +1,103 @@
+body{
+	font-size: 0.9rem;
+}
+
+h1{
+	padding: 5px;
+}
+
+.min{
+	margin: 0.2rem;
+	}
+	
+.minmenu{
+	font-size: 1rem;
+	width: 6rem;
+	top: 4.8rem;
+	}	
+@media screen and (max-width: 363px){	
+		.minmenu{
+	font-size: 0.8rem;
+	width: 5rem;
+	top: 7.1rem;
+	}	
+}
+
+@media screen and (max-width: 363px){
+	.rozw > li > a	{
+	width: 5rem;
+	font-size: 1rem;
+	height: 1.2rem;
+	}
+}
+
+main{					 /*Głowny blok tekst ewentualnie + zdjęcie*/		
+	float: none;
+	max-width: 100%;
+	margin: 1rem;
+	}
+
+@media screen and (max-width: 400px){	
+	.prawezdjecie{
+	width: 280px;
+	height: 279px;
+	}
+}
+	
+.aside1{										/*Panel boczny przeniesiony na koniec strony*/
+	width: 100%; 
+	}
+	
+nav{
+	max-width:50%;
+	float: left;
+	}
+	
+.lewe{	
+	margin-left: 2rem;
+	width: 160px;	
+	height: 160px;
+}
+
+@media screen and (max-width: 500px){
+	.lewe{
+	width: 120px;	
+	height: 120px;
+	}
+}	
+@media screen and (max-width: 400px){	
+	.lewe{
+	margin-left: 0.8rem;
+	}
+}
+@media screen and (max-width: 350px){	
+	.lewe{
+	margin-left: 0rem;
+	}
+}	
+.mail{
+	clear: both;
+	width: 90%;
+	top: 15px;
+	left: 30px;
+	right: 30px;
+	font-size: 1rem;
+	}	
+	
+.aktualnosci{
+	max-width: 90%;
+	font-size: 1.2rem;
+	top: 10px;
+	}		
+	
+.napis{
+	font-size: 1.5rem;
+	}	
+
+	
+	
+
+	
+	
+	
+	

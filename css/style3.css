@@ -1,0 +1,405 @@
+html{
+	max-width: 1400px;
+	box-sizing: border-box;
+	}
+
+body{
+	background-size: 100% 100%;
+	background-image: linear-gradient(to bottom, white, #238E23);
+	font-size: 1rem;
+	margin: 0px;
+	}	
+
+
+	
+h1{							/*Obstylowanie nagłowka*/
+    width: 100%; 
+	box-sizing: border-box;
+	color: red;
+	text-align: left;
+	padding: 10px;
+	background-image: linear-gradient(to right, white, green);
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	}
+
+.min{
+	margin: 1rem;
+	position: fixed;
+	}
+	
+@media screen and (max-width: 750px){
+	.min{
+		margin: 0.8rem;
+	}
+}
+	
+.min > li:hover > ul	{
+	display: block;
+}
+	
+.rozw > li > a	{
+	height: 2rem;
+	width: 10rem;
+	margin: 0rem;
+}
+
+@media screen and (max-width: 780px){
+	.rozw > li > a	{
+	height: 1.5rem;
+	width: 6rem;
+	font-size: 1rem;
+	}
+}
+	
+.minmenu{
+	position: fixed;
+	top: 5rem;
+	background: green;
+	font-size: 1.5rem;
+	border: 4px ridge rgb(000, 000, 000);
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: -4px 6px 8px #000000;
+	font-variant: small-caps;
+	width: 10rem;
+	margin-bottom: 0rem;
+	}	
+
+@media screen and (max-width: 780px){
+	.minmenu{
+	font-size: 1rem;
+	width: 6rem;
+	top: 7.8rem;
+	}	
+}
+
+@media screen and (max-width: 736px){
+	.minmenu{
+	top: 7.9rem;
+	}	
+}
+
+	
+.rozw {
+	list-style-type: none;
+	display: none;
+	position: relative;
+	}	
+	
+
+	
+main{					 /*Głowny blok tekst ewentualnie + zdjęcie*/		
+	float: left;
+	max-width: 75%;
+	box-sizing: border-box;
+	padding-left: 0px;
+	}
+	
+.header1 {					/*Obstylowanie tekstu pod nagłowkiem*/
+	text-align: center;
+	font-size: 1.5rem;
+	font-variant: small-caps;
+	}	
+	
+.Info{					/*Część z tekstem*/
+	float: right;
+	max-width: 40%;
+	min-width: 25%;
+	font-size: 1.1rem;
+	text-align: center;
+	margin-right: 2.5rem;
+	}
+	
+@media screen and (max-width: 1150px){
+	.Info{
+	max-width: 90%;
+	}
+}
+	
+@media screen and (max-width: 800px){
+	.Info{
+	margin-right: 1rem;
+	}
+}	
+	
+.Info p:first-letter {
+	font-weight: bold;
+	color: red;
+	font-size: 1.5rem;
+	}	
+
+figure{						/*Obrazek*/
+	float: left;
+	text-align: center;
+	margin-right: 1px;
+	margin-left: 1px;
+	}
+	
+	
+@media screen and (max-width: 1150px){
+	figure{
+	position: relative;
+	left: 15px;
+	margin-right: 5px;
+	}
+}	
+	
+.prawezdjecie{
+	border: 4px ridge rgb(000, 000, 000);
+	border-radius: 100px;
+	}
+	
+@media screen and (max-width: 1300px)	{
+	.prawezdjecie{
+	width: 400px;
+	height: 399px;
+	margin-left: 0px;
+	margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 1150px)	{
+	.prawezdjecie{
+	width: 500px;
+	height: 499px;
+	}
+}
+
+@media screen and (max-width: 710px)	{
+	.prawezdjecie{
+	width: 400px;
+	height: 399px;
+	}
+}
+
+
+@media screen and (max-width: 600px)	{
+	.prawezdjecie{
+	width: 350px;
+	height: 349px;
+	margin-left: 0px;
+	margin-right: 0px;
+	}
+}
+	
+figcaption{
+	margin-top: 5px;
+	font-variant: small-caps;
+	}
+
+	
+	
+.aside1{										/*Panel boczny*/
+	float: right;
+	width: 25%; 
+	box-sizing: border-box;
+	min-width:150px;
+	}
+	
+nav{					/*nawigacja pasek boczny*/
+	width: 80%;
+	margin-left: 2rem;
+	}
+
+ul{
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+	}	
+
+ul > li > a {						/*linki*/	
+	display: block;
+	width: 90%;
+	line-height: 1.25;
+	background-color: green;
+	margin-top: 14px;
+	margin-bottom: 14px;
+	font-size: 1.5rem;
+	border: 4px ridge rgb(000, 000, 000);
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: -4px 6px 8px #000000;
+	font-variant: small-caps;
+	margin-right: 0.5rem;
+	}	
+	
+a:link {			          /*Pseudo klasy określające wygląd linków*/
+	text-decoration: none;
+	color: red;
+	}
+	
+a:visited {
+	color: black;
+	}
+	
+a:hover {
+	text-decoration: underline;
+	background-color: gray;
+	}
+
+.lewe{						
+	position: relative;
+	top: 55px;
+	left: 4rem;
+	border: 4px ridge rgb(000, 000, 000);
+	border-radius: 100px;
+	}
+	
+@media screen and (max-width: 1150px){
+	.lewe{
+	left: 1.9rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.lewe{
+	left: 2.5rem;
+	width: 140px;	
+	height: 140px;
+	}
+}	
+
+@media screen and (max-width: 900px){
+	.lewe{
+	left: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 750px){
+	.lewe{
+	left: 1rem;
+	}
+}	
+
+@media screen and (max-width: 690px){
+	.lewe{
+	left: 0.6rem;
+	width: 120px;	
+	height: 120px;
+	}
+}	
+	
+.mail{						/*mała grafika i aders mail*/
+	width: 80%;
+	position: relative ;
+	left: 20px;
+	top: 65px;
+	text-align: center;
+    border: solid;
+	}
+	
+.aktualnosci{
+	max-width: 80%;
+	position: relative;
+	top: 65px;
+	left: 25px;
+	text-align: center;
+	font-size: 1.1rem;
+	}	
+	
+.aktualnosci p:first-letter {
+	font-weight: bold;
+	color: red;
+	font-size: 1.5rem;
+	}		
+
+.napis{
+	font-size: 1.5rem;
+	font-variant: small-caps;
+	}	
+	
+@media screen and (max-width: 900px){
+	.napis{
+	font-size: 1.3rem;
+	}
+}								/*Koniec panelu bocznego lewego*/
+	
+	
+	
+	
+.FatFooter{							/*Tłusta Stopka*/
+	position: fixed;
+	left: 0px;
+    bottom: 0px;
+	color: red;
+	background-color: rgba(000, 000, 000, .5);
+	width:100%;
+	box-sizing: border-box;
+	font-variant: small-caps;
+	text-align: center;
+	
+	}
+	
+#clouse{						/*Przycisk chowający i przywołujący stopke*/
+	position: fixed;
+	right: 0.5rem;
+	bottom: 5rem;
+	width: 1.6rem;
+	height: 1.4rem;
+	border: solid;
+	font-size: 2rem;
+	box-shadow: -2px 3px 4px #000000;
+	background-color: #993333;
+	border-radius: 5px;
+	}
+	
+#clousetext{
+	position: fixed;
+	text-align: center;
+	width: 2rem;
+	bottom: 2.9rem;
+	right: 0.4rem;
+	}	
+	
+											/*Obstylowania do O mnie!!!!!*/
+
+.tresc{
+	margin-left: 1rem;
+	}											
+
+.tresc p:first-letter {
+	font-weight: bold;
+	color: red;
+	font-size: 1.5rem;
+	}		
+
+	
+											/*Obstylowanie do Moje projekty*/
+
+.content p:first-letter {
+	font-weight: bold;
+	color: red;
+	font-size: 1.5rem;
+	
+	}	
+
+.content{
+	margin-left: 0.5rem;
+	font-size: 1rem;
+}	
+	
+.opisP{
+	width: 100%;
+	
+	}
+	
+.zdpap{
+	float:left;
+	margin: 0.5rem; 
+}
+
+				/* Obstylowanie do galeri*/
+.galeria{
+	margin: 0.5rem;	
+}
+
+#gallery img {
+	display: inline-block;
+	margin: 10px;
+	border: 1px solid rgb(0,0,0);
+}	
+	
+	
+	

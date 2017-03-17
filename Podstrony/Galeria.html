@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"/>
+	<title>Salamon Sławomir Portfolio</title>
+	
+	<meta content="initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" href="../css/style3.css" type="text/css"/>
+	<link rel="stylesheet" media="(max-width: 620.99px)" href="../css/small-style3.css" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#clouse').click(function(){
+			$('.FatFooter').fadeToggle(500);
+			}); // end function click
+			
+		$('#gallery img').each(function(){
+			var imagFile = $(this).attr('src');
+			var preloadImage = new Image();
+			var imgExt = /(\.\w{3,4}$)/;
+			var preloadImage.src = imgFile.replace(imgExt,'_h$1')
+			
+		$(this).hover(
+			function(){
+				$(this).attr('src' , preloadImage.src);
+			},
+			function(){
+				$(this).atrr('src' , imgFile)
+			}
+		
+			); // end function hover
+		}); // end function  each	
+	});  // end function redy
+		</script>
+	
+</head>
+ 
+ 
+<body>
+	 <header>
+	  <h1>Salamon Sławomir Junior Front-End Developer</h1>
+	</header>
+  
+    <main>
+  
+  
+    <article class="galeria">
+		<header>
+			<h2>Galeria</h2>
+		</header>
+	 
+			
+			<div id="gallery"> 
+		
+		<a href="../css/Zdjecia/large/R.jpg">
+		<img src="../css/Zdjecia/small/R.jpg" width="150" height="150" alt="blue"></a> 
+		
+		<a href="../css/Zdjecia/large/SE.jpg">
+		<img src="../css/Zdjecia/small/SE.jpg" width="200" height="150" alt="green"></a> 
+		
+		<a href="../css/Zdjecia/large/CZ.jpg">
+		<img src="../css/Zdjecia/small/CZ.jpg" width="150" height="150" alt="orange"></a> 
+		
+		<a href="../css/Zdjecia/large/M.jpg">
+		<img src="../css/Zdjecia/small/M.jpg" width="150" height="150" alt="purple"></a> 
+		
+		<a href="../css/Zdjecia/large/SK.jpg">
+		<img src="../css/Zdjecia/small/SK.jpg" width="150" height="150" alt="red"></a>
+		
+		<a href="../css/Zdjecia/large/Z.JPG">
+		<img src="../css/Zdjecia/small/Z.JPG" width="150" height="150" alt="yellow"></a>
+		
+		<a href="../css/Zdjecia/large/J.JPG">
+		<img src="../css/Zdjecia/small/J.JPG" width="150" height="150" alt="yellow"></a>
+		
+		<a href="../css/Zdjecia/large/T.JPG">
+		<img src="../css/Zdjecia/small/T.JPG" width="150" height="150" alt="yellow"></a>
+		
+		<a href="../css/Zdjecia/large/B.JPG">
+		<img src="../css/Zdjecia/small/B.JPG" width="150" height="150" alt="yellow"></a>
+	    
+		</div>
+		
+	 
+	</article>	
+ </main>
+	  
+	<aside class="aside1">
+		<nav>
+			<ul>
+				<li><a href="../Portfolio2.html">Strona startowa</a></li>
+				<li><a href="../Podstrony/Omnie.html"> O Mnie</a></li>  
+				<li><a href="../Podstrony/Mojeprojekty.html">Moje projekty</a></li>
+				<li><a href="../Podstrony/Kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
+		
+			<img class="lewe" src="../css/Zdjecia/G.png"
+				alt="Napis Galeria"
+				title="Galeria"
+				height="200"
+				width="200"/>
+		
+		<address>
+			<div class="mail">
+				<p><a href="mailto:slawomirsalamon1410@gmail.com">Napisz do mnie</a></p>
+			</div>
+		</address>	
+		
+		<div class="aktualnosci"> 
+			<h3 class="napis">Aktualności</h3>
+			<p>Obecnie przebywam w kanadzie, planuję wrócić przed weekendem majowym bieżącego roku. poszukuję pracy jako Junior-Front-End Developer </p>
+		</div>
+	</aside>
+	  
+	  <div id="clouse">
+				<p id="clousetext">x</p>
+			</div>
+				
+	<div class="FatFooter">		<!--Gruba stopka-->
+		
+		<footer>
+			
+				<p>Wykonano przez Salamon Sławomir<br/>Wszelkie prawa zastrzeżone. &copy;
+				</p> 
+		
+		</footer>
+	</div>
+  
+</body>
+</html>
